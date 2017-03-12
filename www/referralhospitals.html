@@ -1,0 +1,36 @@
+<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Referral Hospitals</div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+    
+        <div class="submit-form">
+            <form name="submitForm">
+                <section style="padding: 8px">
+                	<div><h2>Referral Hospitals</h2></div>
+        		</section>
+                
+                <section style="padding: 8px">
+                    <div>
+                        List of District hospitals which support prevention, early detection and management of Cancer.
+                    </div>
+                </section>
+                
+                <section style="padding: 8px">
+                    <div>
+                        Click to view the list of nearest Hospitals for Referrals.
+                    </div>
+                </section>
+                
+                <section style="padding: 0 8px 8px">
+            		<ons-button modifier="large" onclick="window.setTimeout(function(){ window.open('http://www.karnataka.gov.in/hfwsecretariat/Pages/District-Hospitals.aspx', '_system', 'location=yes');}, 2000);">Get Referrals</ons-button>
+        		</section>
+            </form>
+        </div>
+    </div>
+</ons-page>

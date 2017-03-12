@@ -1,0 +1,51 @@
+<ons-page modifier="shop-details" ng-device-backbutton="app.slidingMenu.setMainPage('home.html')">
+
+    <ons-toolbar modifier="transparent">
+		<div class="right">
+			<ons-toolbar-button><ons-icon icon="ion-ios-chatboxes" style="color: white"></ons-icon></ons-toolbar-button>
+		</div>
+		<div class="left">
+			<ons-toolbar-button ng-click="slidingMenu.setMainPage('home.html')"><ons-icon icon="ion-arrow-left-c" style="color: white; font-size: 28px;" fixed-width="false"></ons-icon></ons-toolbar-button>
+		</div>
+	</ons-toolbar>
+
+	<div class="card">
+		<div class="card-name">RxTech</div>
+		<div class="card-desc">A supplementary healthcare aid to the primary referral system for helping those in need of experts.</div>
+	</div>
+
+	<div class="rating">
+		<div class="rating-num">
+			<ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+			<ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+			<ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+			<ons-icon icon="fa-star" fixed-width="false"></ons-icon>
+			<ons-icon icon="fa-star-half" fixed-width="false"></ons-icon>
+			4.5
+		</div>
+	</div>
+  
+	<ons-list class="social-list"><ons-list-item style="line-height: 1; padding: 0;">
+		<ons-row class="action">
+		
+			<ons-col class="action-col"  ng-click="browseFacebook()">
+				<div class="action-icon"><ons-icon icon="ion-social-facebook"></ons-icon></div>
+				<div class="action-label">Facebook</div>
+			</ons-col>
+
+			<ons-col class="action-col" ng-click="browseTwitter()">
+				<div class="action-icon"><ons-icon icon="ion-social-twitter"></ons-icon></div>
+				<div class="action-label">Twitter</div>
+			</ons-col>
+
+			<ons-col class="action-col" ng-click="browseGooglePlus()">
+				<div class="action-icon"><ons-icon icon="ion-social-googleplus"></ons-icon></div>
+				<div class="action-label">Google+</div>
+			</ons-col>
+			
+		</ons-row>
+	</ons-list-item></ons-list>
+
+</ons-page>
+
+<link rel="stylesheet" href="css/about.css" />

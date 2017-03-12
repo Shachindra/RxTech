@@ -1,0 +1,123 @@
+<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Patient Info</div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+        <h2>Patient Details</h2>
+        
+        <div class="submit-form">
+            <form name="submitForm">
+                
+        		<section style="padding: 8px">
+        		  <h2>Habits:</h2>
+        		</section>
+                
+                <section>
+                    Smoking
+                    <label class="checkbox" for="checkSmoking" style="word-wrap:break-word">
+                        <input id="checkSmoking" type="checkbox" ng-model="checkStatusSmoking" checked="checked" >
+        			    <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+		        </section>
+                
+                <section>
+                    Alcohol
+                    <label class="checkbox" for="checkAlcohol" style="word-wrap:break-word">
+                        <input id="checkAlcohol" type="checkbox" ng-model="checkStatusAlcohol" checked="checked" >
+            		    <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+		        </section>
+                
+                <section>
+                    Chewing Pan
+                    <label class="checkbox" for="checkPan" style="word-wrap:break-word">
+                        <input id="checkGum" type="checkbox" ng-model="checkStatusGum" checked="checked" >
+            		    <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+		        </section>
+                
+                <section>
+                    Ghutka or Tobacco
+                    <label class="checkbox" for="checkTobacco" style="word-wrap:break-word">
+                        <input id="checkTobacco" type="checkbox" ng-model="checkStatusTobacco" checked="checked" >
+            		    <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+		        </section>
+        		
+            	<section style="padding: 0 8px 8px">
+        		  <textarea class="text-input" ng-model="user.history" placeholder="Family history of patient related to cancer">        		  </textarea>
+        		</section>
+        		
+        		<section style="padding: 0 8px 8px">
+            	    Is there any Decrease in Mouth Opening?
+                    <label class="checkbox" for="checkMouth" style="word-wrap:break-word">
+                        <input id="checkTobacco" type="checkbox" ng-model="checkMouth" checked="checked" >
+                	    <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+                </section>
+                
+                <section style="padding: 0 8px 8px">
+                    Is there any Burning sensation on Eating?
+                    <label class="checkbox" for="checkEating" style="word-wrap:break-word">
+                        <input id="checkEating" type="checkbox" ng-model="checkEating" checked="checked" >
+                	    <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+                </section>
+                
+                <section style="padding: 0 8px 8px">
+                    Ulcer: Pain?
+                    <label class="checkbox" for="checkPain" style="word-wrap:break-word">
+                        <input id="checkPain" type="checkbox" ng-model="checkPain" checked="checked" >
+                        <div class="checkbox__checkmark"></div>
+        			    <span class="ons-checkbox-inner"></span>
+    			    </label>
+                </section>
+                
+                <section style="padding: 0 8px 8px">
+                    Any Change in Size of ulcer?
+                    <label class="checkbox" for="checkSize" style="word-wrap:break-word">
+                        <input id="checkSize" type="checkbox" ng-model="checkSize" checked="checked" >
+                        <div class="checkbox__checkmark"></div>
+    				    <span class="ons-checkbox-inner"></span>
+    			    </label>
+                </section>
+        		
+                <section style="padding: 0 8px 8px">
+                    Bleeding of ulcer?
+                    <label class="checkbox" for="checkBleeding" style="word-wrap:break-word">
+                        <input id="checkBleeding" type="checkbox" ng-model="checkBleeding" checked="checked" >
+                        <div class="checkbox__checkmark"></div>
+        			    <span class="ons-checkbox-inner"></span>
+    			    </label>
+                </section>
+                
+                <section style="padding: 0 8px 8px">
+            	  <input type="text" class="text-input" required ng-model="user.swelling" placeholder="Swelling/ulcer noticed since..?" >
+        		</section>
+                
+        		<section style="padding: 0 8px 8px">
+        			<ons-button modifier="large" onclick="window.setTimeout(function(){ alert('Please wait for the Data Upload!'); alert('Success! Please Proceed with the Picture Upload!'); app.slidingMenu.setMainPage('settings.html')}, 2000);">Submit</ons-button>
+        		</section>
+    	    </form>
+        </div>
+    </div>
+</ons-page>
+
+<ons-modal var="serviceModal">
+	<ons-icon icon="ion-load-c" spin="true"></ons-icon>
+	<br/>
+	<br/>Please wait while we Confirm your Request.
+	<br/>Do Not Press any Button...
+	<br/>You'll automatically be redirected after Confirmation.
+</ons-modal>

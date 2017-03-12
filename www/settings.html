@@ -1,0 +1,28 @@
+<ons-page>
+
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Patient Info</div>
+    </ons-toolbar>
+
+    <div style="text-align: center">
+    
+        <div class="submit-form">
+            <form name="submitForm">
+                <section style="padding: 8px">
+            		<div><h2>Picture Upload</h2></div>
+        		</section>
+                
+                <section style="padding: 8px">
+                    <input type="file" id="mypic" accept="image/*;capture=camera">
+                </section>
+                
+                <section style="padding: 0 8px 8px">
+            		<ons-button modifier="large" onclick="window.setTimeout(function(){ alert('Please wait for the Data Upload!'); app.slidingMenu.setMainPage('home.html')}, 2000);">Upload</ons-button>
+        		</section>
+            </form>
+        </div>
+    </div>
+</ons-page>
